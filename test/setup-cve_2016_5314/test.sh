@@ -18,10 +18,10 @@ fi
 
 cp ./config.ini $code_folder
 
-echo "The default number of processes is 10. PatchLoc will adjust it according to the number of cpus on the local machines."
+echo "The default number of processes is 10. VulnLoc will adjust it according to the number of cpus on the local machines."
 echo "The default timeout is 4h. The user can change the timeout in ./code/fuzz.py"
 echo "The execution progress can be found at the fuzz.log in the output folder. It will not be printed out in the terminal."
-echo "Please do not terminate the execution until PatchLoc timeouts automatically."
+echo "Please do not terminate the execution until VulnLoc timeouts automatically."
 
 cd $code_folder
 python fuzz.py --config_file ./config.ini --tag $target_cve
