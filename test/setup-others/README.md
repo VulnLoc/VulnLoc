@@ -2,12 +2,12 @@
 
 ### Download Configs and Other Files
 Please download all the .zip files in the [folder](https://drive.google.com/drive/folders/1B5dKaMfqN_mJSaYIIkeScdvZb9P6_tQh?usp=sharing)
-to **./PatchLoc/test** in your localhost and unzip these files.
+to **./VulnLoc/test** in your localhost and unzip these files.
 
 ### Setup Docker Container
 
 ```bash
-cd ./PatchLoc/test/env_setup
+cd ./VulnLoc/test/env_setup
 # Build a docker image
 docker build -f vulnloc_env.Dockerfile -t vulnloc_env .
 # Run a docker container
@@ -28,7 +28,7 @@ mkdir <target_cve>
 
 ```bash
 # Run following commands in your localhost
-cd ./PatchLoc/test/scripts
+cd ./VulnLoc/test/scripts
 ./copy_files.sh <target_cve> <container_id>
 ```
 
@@ -62,7 +62,7 @@ python patchloc.py  \
 ## Example
 Let's take cve-2017-5225 as an example. We first create a docker container for running the experiment.
 ```bash
-cd ./PatchLoc/test/env_setup
+cd ./VulnLoc/test/env_setup
 # Build a docker image
 docker build -f vulnloc_env.Dockerfile -t vulnloc_env .
 # Run a docker container
@@ -82,7 +82,7 @@ mkdir cve-2017-5225
 ```
 ```bash
 # Run following commands in your localhost
-cd ./PatchLoc/test/scripts
+cd ./VulnLoc/test/scripts
 ./copy_files.sh cve-2017-5225 88b45068e205
 cd ../../
 docker cp ./code 88b45068e205:/root/workspace/code
