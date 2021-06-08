@@ -1,8 +1,7 @@
 ## Quick Tour
 
 ### Download Configs and Other Files
-Please download all the .zip files in the folder
-[PatchLoc-Configs](https://drive.google.com/drive/folders/1B5dKaMfqN_mJSaYIIkeScdvZb9P6_tQh?usp=sharing)
+Please download all the .zip files in the [folder](https://drive.google.com/drive/folders/1B5dKaMfqN_mJSaYIIkeScdvZb9P6_tQh?usp=sharing)
 to **./PatchLoc/test** in your localhost and unzip these files.
 
 ### Setup Docker Container
