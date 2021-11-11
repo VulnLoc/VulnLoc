@@ -183,11 +183,12 @@ $ python fuzz.py --config_file <path_to_config_file> --tag <cve_tag>
 ```console
 $ python patchloc.py --config_file <path_to_config_file> --tag <cve_tag> --func calc --out_folder <path_to_output_folder> --poc_trace_hash <poc_trace_hash> --process_num <process_num> 
 ```
+This script will output a set of candidate branch locations. The basic blocks immediately preceding/succeeding the candidate branch may be modified to fix the bug.
 
 ## More Examples
 More examples can be found at the folder **./test**. The **README.md** file in
 each subfolder under **./test** will tell you how to setup each CVE in our
-benchmark.
+benchmark. We performed the experiments on a 56-core 2.0GHz 64GB RAM Intel Xeon machine.
 
 
 
